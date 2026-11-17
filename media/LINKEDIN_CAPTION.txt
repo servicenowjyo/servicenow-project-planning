@@ -1,0 +1,11 @@
+See what drives the deadline.
+
+Built and verified with ServiceNow + JavaScript.
+
+6 synthetic plans, 36 activities | 2 plans past deadline | 3 with resource conflicts | 17/17 local tests | 6/6 ServiceNow matches.
+
+Custom implementation with editable records and persisted results. Synthetic data; developer-instance project.
+
+GitHub: https://github.com/servicenowjyo
+
+#ServiceNow #JavaScript #ProjectPlanning

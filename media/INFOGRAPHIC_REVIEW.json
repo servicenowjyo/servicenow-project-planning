@@ -1,0 +1,11 @@
+{
+  "project": "project-planning",
+  "file": "LinkedIn_Project_Planning.png",
+  "format": "PNG",
+  "width": 1122,
+  "height": 1402,
+  "visual_review": "Checked displayed titles, workflow, result counts, simplified code, GitHub profile spelling and disclosures against packaged results/source.",
+  "evidence": "../evidence/05-deadline-fix-redeploy.txt",
+  "synthetic": true,
+  "post_fix_edit": "17 Nov 2026: two figures corrected in the PNG after the deadline fix (3 -> 2 plans past deadline; 16/16 -> 17/17 tests). Evidence: ../evidence/05-deadline-fix-redeploy.txt"
+}

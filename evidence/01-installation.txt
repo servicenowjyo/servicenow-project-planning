@@ -1,0 +1,63 @@
+- text: "[0:00:00.556] Script completed in scope global: script"
+- separator
+- text: Script execution history and recovery
+- link "available here":
+  - /url: sys_script_execution_history.do?sys_id=d544936a87a013100fbae59e3fbb3568
+- table:
+  - rowgroup:
+    - row "Operation Table Row Count":
+      - columnheader "Operation"
+      - columnheader "Table"
+      - columnheader "Row Count"
+  - rowgroup:
+    - row "update u_ppc_planning 6":
+      - cell "update"
+      - cell "u_ppc_planning"
+      - cell "6":
+        - link "6":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=0144936a87a013100fbae59e3fbb3568^target_class_name=u_ppc_planning^operation=update
+    - row "insert sys_update_version 5":
+      - cell "insert"
+      - cell "sys_update_version"
+      - cell "5":
+        - link "5":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=0144936a87a013100fbae59e3fbb3568^target_class_name=sys_update_version^operation=insert
+    - row "insert sys_metadata_customization 3":
+      - cell "insert"
+      - cell "sys_metadata_customization"
+      - cell "3":
+        - link "3":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=0144936a87a013100fbae59e3fbb3568^target_class_name=sys_metadata_customization^operation=insert
+    - row "insert sys_update_xml 3":
+      - cell "insert"
+      - cell "sys_update_xml"
+      - cell "3":
+        - link "3":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=0144936a87a013100fbae59e3fbb3568^target_class_name=sys_update_xml^operation=insert
+    - row "update sys_update_version 2":
+      - cell "update"
+      - cell "sys_update_version"
+      - cell "2":
+        - link "2":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=0144936a87a013100fbae59e3fbb3568^target_class_name=sys_update_version^operation=update
+- text: ...and another 6 affected table(s)
+- link "View full summary here":
+  - /url: sys_script_execution_history.do?sys_id=d544936a87a013100fbae59e3fbb3568
+- separator
+- text: "*** Script: SCHEMA READY u_ppc_planning"
+- text: "[CacheFlushLog] event=sys_script_include, count=1, ms=0: Flushing catalog sys_script_include"
+- text: "[CacheFlushLog] event=sys_metadata_customization, count=1, ms=55: Flushing catalog sys_metadata_customization"
+- text: Loaded the Script Includes cache in 26 ms (loaded=true, size=5329)
+- text: Pausing Tiered Cache serialization for all journals.
+- text: Normal Journal flush threshold is 90%. It is currently at 0.00%
+- text: Cache flush threshold not met. Skipping journal flush
+- text: "Resuming Tiered Cache serialization for all journals. Total Unserialized Cacheables during pause: 0"
+- text: "SysCacheRealFormFlush: msg=\"SYSCACHE_REALFORM cache flushed\", source=table_pair, source_table=sys_ui_action, user=admin"
+- text: "[CacheFlushLog] event=sys_ui_action, count=1, ms=151: Flushing catalog sys_ui_action"
+- text: "[CacheFlushLog] event=sys_script, count=1, ms=78: Flushing catalog sys_script"
+- text: "*** Script: INDEPENDENT LOGIC INSTALLED Project Planning"
+- text: "*** Script: INSERTED 0"
+- text: "*** Script: REVIEWED {\"planning\":6}"
+- text: "[CacheFlushLog] event=sys_ui_page, count=1, ms=122: Flushing catalog sys_ui_page"
+- text: "*** Script: WORKSPACE READY /u_project_planning.do"
+- separator

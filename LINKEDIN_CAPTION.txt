@@ -1,0 +1,11 @@
+Project Planning, built and verified in ServiceNow.
+
+Which activities drive completion, where is float available, and where do resources conflict?
+
+✅ 6/6 synthetic records matched local results
+✅ 17/17 JavaScript tests passed
+✅ Editable records, persisted advice and a working review button
+
+GitHub: https://github.com/servicenowjyo/servicenow-project-planning
+
+#ServiceNow #JavaScript #ServiceNowDeveloper #ProjectManagement

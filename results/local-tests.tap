@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: planning: hand-calculated longest path and deadline
+ok 1 - planning: hand-calculated longest path and deadline
+  ---
+  duration_ms: 2.38343
+  type: 'test'
+  ...
+# Subtest: planning: backward pass computes noncritical float
+ok 2 - planning: backward pass computes noncritical float
+  ---
+  duration_ms: 0.458804
+  type: 'test'
+  ...
+# Subtest: planning: only tasks with completed dependencies are ready
+ok 3 - planning: only tasks with completed dependencies are ready
+  ---
+  duration_ms: 1.116587
+  type: 'test'
+  ...
+# Subtest: planning: catches three days of 200% allocation
+ok 4 - planning: catches three days of 200% allocation
+  ---
+  duration_ms: 0.321809
+  type: 'test'
+  ...
+# Subtest: planning: finish-exclusive intervals avoid false conflict
+ok 5 - planning: finish-exclusive intervals avoid false conflict
+  ---
+  duration_ms: 0.246434
+  type: 'test'
+  ...
+# Subtest: planning: exactly 100% combined allocation is fine
+ok 6 - planning: exactly 100% combined allocation is fine
+  ---
+  duration_ms: 0.24032
+  type: 'test'
+  ...
+# Subtest: planning: source order does not change schedule
+ok 7 - planning: source order does not change schedule
+  ---
+  duration_ms: 0.383824
+  type: 'test'
+  ...
+# Subtest: planning: cycle rejected
+ok 8 - planning: cycle rejected
+  ---
+  duration_ms: 0.555765
+  type: 'test'
+  ...
+# Subtest: planning: unknown predecessor rejected
+ok 9 - planning: unknown predecessor rejected
+  ---
+  duration_ms: 0.395754
+  type: 'test'
+  ...
+# Subtest: planning: duplicate task rejected
+ok 10 - planning: duplicate task rejected
+  ---
+  duration_ms: 0.441642
+  type: 'test'
+  ...
+# Subtest: planning: duplicate dependency rejected
+ok 11 - planning: duplicate dependency rejected
+  ---
+  duration_ms: 0.366272
+  type: 'test'
+  ...
+# Subtest: planning: completed successor cannot precede unfinished predecessor
+ok 12 - planning: completed successor cannot precede unfinished predecessor
+  ---
+  duration_ms: 0.364656
+  type: 'test'
+  ...
+# Subtest: planning: zero duration rejected
+ok 13 - planning: zero duration rejected
+  ---
+  duration_ms: 0.143369
+  type: 'test'
+  ...
+# Subtest: planning: over-100% task rejected
+ok 14 - planning: over-100% task rejected
+  ---
+  duration_ms: 0.111081
+  type: 'test'
+  ...
+# Subtest: planning: empty network rejected
+ok 15 - planning: empty network rejected
+  ---
+  duration_ms: 0.103962
+  type: 'test'
+  ...
+# Subtest: deterministic policy leaves source unchanged
+ok 16 - deterministic policy leaves source unchanged
+  ---
+  duration_ms: 0.238641
+  type: 'test'
+  ...
+# Subtest: planning: deadline is the last allowed working day (inclusive)
+ok 17 - planning: deadline is the last allowed working day (inclusive)
+  ---
+  duration_ms: 0.189068
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 304.752776

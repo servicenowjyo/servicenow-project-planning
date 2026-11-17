@@ -1,0 +1,458 @@
+[
+  {
+    "id": "PPC-P-001",
+    "duration_days": 10,
+    "finish_date": "2026-11-28",
+    "deadline_slip_days": 0,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 3,
+    "conflicts": [
+      {
+        "resource": "Engineer",
+        "day_offset": 2,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 3,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 4,
+        "allocation_pct": 200
+      }
+    ],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 6,
+        "ls": 2,
+        "lf": 6,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 4,
+        "lf": 7,
+        "float_days": 2
+      },
+      {
+        "id": "D",
+        "es": 6,
+        "ef": 8,
+        "ls": 6,
+        "lf": 8,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 7,
+        "lf": 8,
+        "float_days": 2
+      },
+      {
+        "id": "F",
+        "es": 8,
+        "ef": 10,
+        "ls": 8,
+        "lf": 10,
+        "float_days": 0
+      }
+    ]
+  },
+  {
+    "id": "PPC-P-002",
+    "duration_days": 11,
+    "finish_date": "2026-11-29",
+    "deadline_slip_days": 0,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 0,
+    "conflicts": [],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 7,
+        "ls": 2,
+        "lf": 7,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 5,
+        "lf": 8,
+        "float_days": 3
+      },
+      {
+        "id": "D",
+        "es": 7,
+        "ef": 9,
+        "ls": 7,
+        "lf": 9,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 8,
+        "lf": 9,
+        "float_days": 3
+      },
+      {
+        "id": "F",
+        "es": 9,
+        "ef": 11,
+        "ls": 9,
+        "lf": 11,
+        "float_days": 0
+      }
+    ]
+  },
+  {
+    "id": "PPC-P-003",
+    "duration_days": 12,
+    "finish_date": "2026-11-30",
+    "deadline_slip_days": 2,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 3,
+    "conflicts": [
+      {
+        "resource": "Engineer",
+        "day_offset": 2,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 3,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 4,
+        "allocation_pct": 200
+      }
+    ],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 8,
+        "ls": 2,
+        "lf": 8,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 6,
+        "lf": 9,
+        "float_days": 4
+      },
+      {
+        "id": "D",
+        "es": 8,
+        "ef": 10,
+        "ls": 8,
+        "lf": 10,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 9,
+        "lf": 10,
+        "float_days": 4
+      },
+      {
+        "id": "F",
+        "es": 10,
+        "ef": 12,
+        "ls": 10,
+        "lf": 12,
+        "float_days": 0
+      }
+    ]
+  },
+  {
+    "id": "PPC-P-004",
+    "duration_days": 10,
+    "finish_date": "2026-11-28",
+    "deadline_slip_days": 0,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 0,
+    "conflicts": [],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 6,
+        "ls": 2,
+        "lf": 6,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 4,
+        "lf": 7,
+        "float_days": 2
+      },
+      {
+        "id": "D",
+        "es": 6,
+        "ef": 8,
+        "ls": 6,
+        "lf": 8,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 7,
+        "lf": 8,
+        "float_days": 2
+      },
+      {
+        "id": "F",
+        "es": 8,
+        "ef": 10,
+        "ls": 8,
+        "lf": 10,
+        "float_days": 0
+      }
+    ]
+  },
+  {
+    "id": "PPC-P-005",
+    "duration_days": 11,
+    "finish_date": "2026-11-29",
+    "deadline_slip_days": 1,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 3,
+    "conflicts": [
+      {
+        "resource": "Engineer",
+        "day_offset": 2,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 3,
+        "allocation_pct": 200
+      },
+      {
+        "resource": "Engineer",
+        "day_offset": 4,
+        "allocation_pct": 200
+      }
+    ],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 7,
+        "ls": 2,
+        "lf": 7,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 5,
+        "lf": 8,
+        "float_days": 3
+      },
+      {
+        "id": "D",
+        "es": 7,
+        "ef": 9,
+        "ls": 7,
+        "lf": 9,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 8,
+        "lf": 9,
+        "float_days": 3
+      },
+      {
+        "id": "F",
+        "es": 9,
+        "ef": 11,
+        "ls": 9,
+        "lf": 11,
+        "float_days": 0
+      }
+    ]
+  },
+  {
+    "id": "PPC-P-006",
+    "duration_days": 12,
+    "finish_date": "2026-11-30",
+    "deadline_slip_days": 0,
+    "critical_task_ids": [
+      "A",
+      "B",
+      "D",
+      "F"
+    ],
+    "ready_task_ids": [
+      "B",
+      "C"
+    ],
+    "overloaded_resource_days": 0,
+    "conflicts": [],
+    "schedule": [
+      {
+        "id": "A",
+        "es": 0,
+        "ef": 2,
+        "ls": 0,
+        "lf": 2,
+        "float_days": 0
+      },
+      {
+        "id": "B",
+        "es": 2,
+        "ef": 8,
+        "ls": 2,
+        "lf": 8,
+        "float_days": 0
+      },
+      {
+        "id": "C",
+        "es": 2,
+        "ef": 5,
+        "ls": 6,
+        "lf": 9,
+        "float_days": 4
+      },
+      {
+        "id": "D",
+        "es": 8,
+        "ef": 10,
+        "ls": 8,
+        "lf": 10,
+        "float_days": 0
+      },
+      {
+        "id": "E",
+        "es": 5,
+        "ef": 6,
+        "ls": 9,
+        "lf": 10,
+        "float_days": 4
+      },
+      {
+        "id": "F",
+        "es": 10,
+        "ef": 12,
+        "ls": 10,
+        "lf": 12,
+        "float_days": 0
+      }
+    ]
+  }
+]

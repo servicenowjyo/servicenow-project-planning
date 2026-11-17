@@ -1,0 +1,32 @@
+Create ONE polished, high-resolution LinkedIn infographic, portrait 4:5 (aim 1600 x 2000). White background, generous whitespace, rounded pastel cards, bold dark navy headings, elegant editorial typography, colourful dimensional icons, crisp readable typesetting. Design a recruiter-facing ServiceNow JavaScript portfolio graphic, not a software screenshot. No invented logos, people, testimonials or claims. Do not add numbers beyond specified copy. Make the GitHub profile URL prominent and spell it exactly. No QR codes. Each card's content should be visually grouped and not crowded. Include the supplied limitations legibly. Render code in monospaced text, exactly as supplied. Output one PNG.
+Use royal blue, violet, warm orange and mint. Hero illustration: colourful linked schedule blocks, a calendar and a critical-path ribbon, with no extra numerical labels. Gantt bars may be decorative but no fabricated axis or percentages.
+Top eyebrow: SERVICENOW + JAVASCRIPT
+Main title: PROJECT PLANNING
+Hook: See what drives the deadline.
+Small subline: Built and verified in a ServiceNow developer instance
+Three-step flow with icons:
+Map dependencies → Calculate critical activities → Flag schedule risk
+Technology line: Custom table • Script Includes • Review button • Business Rule
+Panel heading: VERIFIED RESULTS • SYNTHETIC DATA
+Six tiles:
+6 | project plans
+36 | planned activities
+2 | plans past deadline
+3 | plans with resource conflicts
+17 / 17 | local JavaScript tests passed
+6 / 6 | ServiceNow plans matched
+Small green badge: Working form button verified
+Example card heading: ONE PLAN • CRITICAL ACTIVITIES
+Draw a simple four-node linked path labelled A → B → D → F
+Supporting text: 10 calendar days • C and E each have 2 days of float
+Small note: Baseline schedule • Per-plan resource capacity • No automatic levelling
+Code card heading: CORE JAVASCRIPT
+Code subline: Simplified server-side excerpt
+Code exactly:
+n.ef = n.es + n.source.duration_days;
+var totalFloat = node.ls - node.es;
+if (totalFloat === 0) critical.push(src.id);
+Capability strip: Editable activity network • Persisted results • Cycle checks
+Footer prominent: GitHub: github.com/servicenowjyo
+Disclosure: Custom implementation • Synthetic data • No delivery improvement claimed
+Hashtags: #ServiceNow  #JavaScript  #ProjectPlanning

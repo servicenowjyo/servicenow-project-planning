@@ -1,0 +1,36 @@
+[PRE-FIX OBSERVATION, kept for history. Recorded before the 17 Nov 2026 deadline fix; see 05-deadline-fix-redeploy.txt for post-fix results.]
+- text: "[0:00:00.136] Script completed in scope global: script"
+- separator
+- text: Script execution history and recovery
+- link "available here":
+  - /url: sys_script_execution_history.do?sys_id=3644176a87a013100fbae59e3fbb35a7
+- table:
+  - rowgroup:
+    - row "Operation Table Row Count":
+      - columnheader "Operation"
+      - columnheader "Table"
+      - columnheader "Row Count"
+  - rowgroup:
+    - row "update u_ppc_planning 1":
+      - cell "update"
+      - cell "u_ppc_planning"
+      - cell "1":
+        - link "1":
+          - /url: sys_rollback_sequence_list.do?sysparm_query=context=7e44176a87a013100fbae59e3fbb35a5^target_class_name=u_ppc_planning^operation=update
+- separator
+- text: "*** Script: PASS fixture found"
+- text: "*** Script: PASS source edit invalidates advice"
+- text: "*** Script: PASS recalculation works"
+- text: "*** Script: PASS fixture restored"
+- text: "*** Script: PASS repeat review stable"
+- text: "*** Script: WORKFLOW VERIFICATION PASSED Project Planning"
+- text: "*** Script: SOURCE EXACT ProjectPlanningPolicy"
+- text: "*** Script: SOURCE EXACT ProjectPlanningService"
+- text: "*** Script: MATCH PPC-P-004 ON_TRACK"
+- text: "*** Script: MATCH PPC-P-005 REVIEW"
+- text: "*** Script: MATCH PPC-P-006 ON_TRACK"
+- text: "*** Script: MATCH PPC-P-001 REVIEW"
+- text: "*** Script: MATCH PPC-P-002 ON_TRACK"
+- text: "*** Script: MATCH PPC-P-003 REVIEW"
+- text: "*** Script: VERIFICATION PASSED Project Planning 6/6 | independent project | synthetic data"
+- separator

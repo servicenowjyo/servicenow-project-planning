@@ -1,0 +1,33 @@
+{
+  "kind": "planning",
+  "slug": "project-planning",
+  "title": "Project Planning",
+  "policy": "ProjectPlanningPolicy",
+  "service": "ProjectPlanningService",
+  "page": "u_project_planning",
+  "table": "u_ppc_planning",
+  "helpers": [
+    "_integer",
+    "_date"
+  ],
+  "fields": [
+    [
+      "u_start_date",
+      "Start date ISO",
+      "string",
+      10
+    ],
+    [
+      "u_deadline",
+      "Finish deadline ISO",
+      "string",
+      10
+    ],
+    [
+      "u_tasks",
+      "Task network JSON",
+      "string",
+      16000
+    ]
+  ]
+}

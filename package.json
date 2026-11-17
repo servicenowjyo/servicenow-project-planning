@@ -1,0 +1,12 @@
+{
+  "name": "servicenow-project-planning",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/policy.test.js",
+    "build": "node tools/build.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

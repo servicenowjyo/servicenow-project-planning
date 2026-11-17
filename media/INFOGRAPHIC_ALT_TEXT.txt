@@ -1,0 +1,1 @@
+White-background LinkedIn infographic for project planning, with colourful icons, a simplified JavaScript excerpt and verified developer-instance results. 6 synthetic plans, 36 activities | 2 plans past deadline | 3 with resource conflicts | 17/17 local tests | 6/6 ServiceNow matches. GitHub: github.com/servicenowjyo. Custom implementation; synthetic data.

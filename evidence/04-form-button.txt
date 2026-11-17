@@ -1,0 +1,71 @@
+[PRE-FIX OBSERVATION, kept for history. Recorded before the 17 Nov 2026 deadline fix; see 05-deadline-fix-redeploy.txt for post-fix results.]
+- region
+- region
+- navigation "Secondary":
+  - link "Back":
+    - text: 
+    - generic: Back
+  - button "additional actions": 
+  - heading "Portfolio planning Packaging line upgrade" [level=1]:
+    - button "Portfolio planning Packaging line upgrade":
+      - generic: Portfolio planning
+      - generic: Packaging line upgrade
+    - text:  
+  - button "Manage Attachments": 
+  - button "Personalize Form":
+    - text: 
+    - generic: Personalize Form
+  - button "More options":
+    - text: 
+    - generic: More options
+  - text:   
+  - button "Update"
+  - button "Review planning"
+  - button "Delete"
+  - text: 
+- list:
+- region "Output messages":
+  - text: 
+  - generic: Info Message
+  - text: "Review saved: Critical: A, B, D, F | Ready: B, C | Overloaded resource-days: 3"
+- button "Close Messages": 
+- region "Portfolio planning form section":
+  - note
+  - text: Project / assessment
+  - textbox "Project / assessment" [active]: Packaging line upgrade
+  - note
+  - text: Project key
+  - textbox "Project key": PPC-P-001
+  - note
+  - text: Record key
+  - textbox "Record key": PPC-P-001
+  - note
+  - text: Last reviewed input JSON
+  - textbox "Last reviewed input JSON": "{\"id\":\"PPC-P-001\",\"start_date\":\"2026-11-18\",\"deadline\":\"2026-11-27\",\"tasks\":[{\"id\":\"A\",\"name\":\"Approve scope\",\"duration_days\":2,\"depends_on\":[],\"resource\":\"Planner\",\"allocation_pct\":100,\"done\":true},{\"id\":\"B\",\"name\":\"Configure platform\",\"duration_days\":4,\"depends_on\":[\"A\"],\"resource\":\"Engineer\",\"allocation_pct\":100,\"done\":false},{\"id\":\"C\",\"name\":\"Prepare integrations\",\"duration_days\":3,\"depends_on\":[\"A\"],\"resource\":\"Engineer\",\"allocation_pct\":100,\"done\":false},{\"id\":\"D\",\"name\":\"System testing\",\"duration_days\":2,\"depends_on\":[\"B\"],\"resource\":\"QA\",\"allocation_pct\":100,\"done\":false},{\"id\":\"E\",\"name\":\"Integration testing\",\"duration_days\":1,\"depends_on\":[\"C\"],\"resource\":\"Integrator QA\",\"allocation_pct\":100,\"done\":false},{\"id\":\"F\",\"name\":\"Release readiness\",\"duration_days\":2,\"depends_on\":[\"D\",\"E\"],\"resource\":\"Release owner\",\"allocation_pct\":100,\"done\":false}]}"
+  - note
+  - text: Calculated results JSON
+  - textbox "Calculated results JSON": "{\"id\":\"PPC-P-001\",\"duration_days\":10,\"finish_date\":\"2026-11-28\",\"deadline_slip_days\":1,\"critical_task_ids\":[\"A\",\"B\",\"D\",\"F\"],\"ready_task_ids\":[\"B\",\"C\"],\"overloaded_resource_days\":3,\"conflicts\":[{\"resource\":\"Engineer\",\"day_offset\":2,\"allocation_pct\":200},{\"resource\":\"Engineer\",\"day_offset\":3,\"allocation_pct\":200},{\"resource\":\"Engineer\",\"day_offset\":4,\"allocation_pct\":200}],\"schedule\":[{\"id\":\"A\",\"es\":0,\"ef\":2,\"ls\":0,\"lf\":2,\"float_days\":0},{\"id\":\"B\",\"es\":2,\"ef\":6,\"ls\":2,\"lf\":6,\"float_days\":0},{\"id\":\"C\",\"es\":2,\"ef\":5,\"ls\":4,\"lf\":7,\"float_days\":2},{\"id\":\"D\",\"es\":6,\"ef\":8,\"ls\":6,\"lf\":8,\"float_days\":0},{\"id\":\"E\",\"es\":5,\"ef\":6,\"ls\":7,\"lf\":8,\"float_days\":2},{\"id\":\"F\",\"es\":8,\"ef\":10,\"ls\":8,\"lf\":10,\"float_days\":0}]}"
+  - note
+  - text: Recommended review actions
+  - textbox "Recommended review actions": "Critical: A, B, D, F | Ready: B, C | Overloaded resource-days: 3"
+  - note
+  - text: Last reviewed at
+  - text: 
+  - textbox "Last reviewed at": 2026-11-16 23:48:07
+  - note
+  - text: Review status
+  - textbox "Review status": REVIEW
+  - note
+  - text: Finish deadline ISO
+  - textbox "Finish deadline ISO": 2026-11-27
+  - note
+  - text: Task network JSON
+  - textbox "Task network JSON": "[{\"id\":\"A\",\"name\":\"Approve scope\",\"duration_days\":2,\"depends_on\":[],\"resource\":\"Planner\",\"allocation_pct\":100,\"done\":true},{\"id\":\"B\",\"name\":\"Configure platform\",\"duration_days\":4,\"depends_on\":[\"A\"],\"resource\":\"Engineer\",\"allocation_pct\":100,\"done\":false},{\"id\":\"C\",\"name\":\"Prepare integrations\",\"duration_days\":3,\"depends_on\":[\"A\"],\"resource\":\"Engineer\",\"allocation_pct\":100,\"done\":false},{\"id\":\"D\",\"name\":\"System testing\",\"duration_days\":2,\"depends_on\":[\"B\"],\"resource\":\"QA\",\"allocation_pct\":100,\"done\":false},{\"id\":\"E\",\"name\":\"Integration testing\",\"duration_days\":1,\"depends_on\":[\"C\"],\"resource\":\"Integrator QA\",\"allocation_pct\":100,\"done\":false},{\"id\":\"F\",\"name\":\"Release readiness\",\"duration_days\":2,\"depends_on\":[\"D\",\"E\"],\"resource\":\"Release owner\",\"allocation_pct\":100,\"done\":false}]"
+  - note
+  - text: Start date ISO
+  - textbox "Start date ISO": 2026-11-18
+- button "Update"
+- button "Review planning"
+- button "Delete"
+- text:                                                   
+- status

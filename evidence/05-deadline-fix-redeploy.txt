@@ -1,0 +1,46 @@
+Deadline fix redeployment, 17 November 2026 (re-verified on the same ServiceNow developer instance)
+
+Defect: deadline_slip_days compared the finish-exclusive boundary with the deadline date, so a plan
+finishing on its deadline day was reported 1 day late. Fix: the deadline is the last allowed working
+day (inclusive): slip = max(0, start + duration - (deadline + 1)).
+
+--- Deployment run (Scripts - Background) ---
+PASS policy found
+PASS old line present once
+PASS installed policy == repo source (sha256)
+PASS u_project_financial_management page == repo Workspace.xml (sha256)
+PASS u_project_governance page == repo Workspace.xml (sha256)
+PASS u_project_planning page == repo Workspace.xml (sha256)
+REVIEWED {"planning":6}
+MATCH PPC-P-001 slip=0 overloaded=3 status=REVIEW
+MATCH PPC-P-002 slip=0 overloaded=0 status=ON_TRACK
+MATCH PPC-P-003 slip=2 overloaded=3 status=REVIEW
+MATCH PPC-P-004 slip=0 overloaded=0 status=ON_TRACK
+MATCH PPC-P-005 slip=1 overloaded=3 status=REVIEW
+MATCH PPC-P-006 slip=0 overloaded=0 status=ON_TRACK
+PASS 6/6 persisted planning results match local expected results
+DEPLOY + VERIFY COMPLETE
+
+--- Re-verification run (screenshots/01-live-verification.jpg) ---
+*** Script: PASS fixture found
+*** Script: PASS source edit invalidates advice
+*** Script: PASS recalculation works
+*** Script: PASS fixture restored
+*** Script: PASS repeat review stable
+*** Script: WORKFLOW VERIFICATION PASSED Project Planning
+*** Script: PASS SOURCE EXACT (sha256) ProjectPlanningPolicy
+*** Script: PASS SOURCE EXACT (sha256) ProjectPlanningService
+*** Script: MATCH PPC-P-001 REVIEW | deadline slip 0 d | overloaded resource-days 3
+*** Script: MATCH PPC-P-002 ON_TRACK | deadline slip 0 d | overloaded resource-days 0
+*** Script: MATCH PPC-P-003 REVIEW | deadline slip 2 d | overloaded resource-days 3
+*** Script: MATCH PPC-P-004 ON_TRACK | deadline slip 0 d | overloaded resource-days 0
+*** Script: MATCH PPC-P-005 REVIEW | deadline slip 1 d | overloaded resource-days 3
+*** Script: MATCH PPC-P-006 ON_TRACK | deadline slip 0 d | overloaded resource-days 0
+*** Script: VERIFICATION PASSED Project Planning 6/6 | deadline fix (inclusive deadline) redeployed | synthetic data
+
+Matching uses SHA-256 of a key-sorted JSON serialisation of each stored result, compared with
+results/expected.json generated locally by `npm run build`.
+
+--- Unchanged projects re-checked in the same session ---
+PASS u_ppc_financial 18/18 persisted results unchanged and match expected
+PASS u_ppc_governance 12/12 persisted results unchanged and match expected
